@@ -1,12 +1,11 @@
 import Header from "./Header";
-import Table from "./Table";
-import list from "./data";
+import Book from "./components/Book";
 
 export default function App() {
   return (
     <>
       <Header />
-      <Table tableData={list} />
+      <Book />
     </>
   );
 }
