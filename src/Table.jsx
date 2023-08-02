@@ -1,4 +1,9 @@
 export default function Table() {
+  const list = [
+    { firstName: "Adam", lastName: "Kowalski", age: 33 },
+    { firstName: "Izabela", lastName: "Makowska", age: 25 },
+    { firstName: "Jan", lastName: "Urbański", age: 46 },
+  ];
   return (
     <table
       className="mx-auto max-w-2xl text-slate-50"
@@ -11,19 +16,19 @@ export default function Table() {
         <th>Age</th>
       </tr>
       <tr>
-        <td>Adam</td>
-        <td>Kowalski</td>
-        <td>33</td>
+        <td>{list[0].firstName}</td>
+        <td>{list[0].lastName}</td>
+        <td>{list[0].age}</td>
       </tr>
       <tr>
-        <td>Izabela</td>
-        <td>Makowska</td>
-        <td>25</td>
+        <td>{list[1].firstName}</td>
+        <td>{list[1].lastName}</td>
+        <td>{list[1].age}</td>
       </tr>
       <tr>
-        <td>Jan</td>
-        <td>Urbański</td>
-        <td>46</td>
+        <td>{list[2].firstName}</td>
+        <td>{list[2].lastName}</td>
+        <td>{list[2].age}</td>
       </tr>
     </table>
   );
