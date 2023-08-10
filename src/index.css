@@ -17,3 +17,11 @@ th {
 tr:nth-child(even) {
   background-color: #1822ad;
 }
+
+.delete-btn {
+  @apply absolute right-2 top-0 flex h-5 w-5 items-center justify-center rounded-full bg-slate-500 transition-all duration-200 hover:bg-slate-900 active:scale-90;
+}
+
+.book-card {
+  @apply relative h-52 w-60 space-y-2 rounded-xl bg-slate-50 p-6 text-slate-800 shadow-xl;
+}
