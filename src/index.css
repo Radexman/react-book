@@ -23,5 +23,5 @@ tr:nth-child(even) {
 }
 
 .book-card {
-  @apply relative h-52 w-60 space-y-2 rounded-xl bg-slate-50 p-6 text-slate-800 shadow-xl;
+  @apply relative h-52 w-full space-y-2 rounded-xl bg-slate-50 p-6 text-slate-800 shadow-xl md:w-64;
 }

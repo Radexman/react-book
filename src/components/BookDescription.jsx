@@ -1,9 +1,10 @@
+import PropTypes from "prop-types";
 import { FaTimes } from "react-icons/fa";
 
 export default function BookDesciption({ book }) {
   return (
     <div className="book-card">
-      <h2 className="text-3xl">{book.title}</h2>
+      <h2 className="text-3xl font-semibold">{book.title}</h2>
       <p className="text-2xl">{book.author}</p>
       <p className="xl">{`Pages: ${book.pages}`}</p>
       <button title="Delete Book" className="delete-btn group">
@@ -12,3 +13,7 @@ export default function BookDesciption({ book }) {
     </div>
   );
 }
+
+BookDesciption.propTypes = {
+  book: PropTypes.object.isRequired,
+};
