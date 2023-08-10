@@ -1,4 +1,4 @@
-import { formatting, isAdult } from "./utils";
+import { formatting, isAdult } from "../utils";
 
 export default function TableRow({ tableData }) {
   return (

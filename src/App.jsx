@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Book from "./components/Book";
+import BookDescription from "./components/BookDescription";
 import Footer from "./components/Footer";
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
   return (
     <>
       <Header />
-      <Book bookData={data} />
+      <BookDescription bookData={data} />
       <Footer />
     </>
   );
