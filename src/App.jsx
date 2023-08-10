@@ -2,20 +2,17 @@ import { useState } from "react";
 import Header from "./components/Header";
 import BookDescription from "./components/BookDescription";
 import Footer from "./components/Footer";
+import books from "./data/books";
 
 export default function App() {
-  const [data, setData] = useState([
-    {
-      title: "Hobbit",
-      author: "J.R.R Tolkien",
-      pages: "455",
-    },
-  ]);
+  const [entries, setData] = useState(books);
 
   return (
     <>
       <Header />
-      <BookDescription bookData={data} />
+      {entries.map((book, i) => (
+        <BookDescription key={i} book={book} />
+      ))}
       <Footer />
     </>
   );
