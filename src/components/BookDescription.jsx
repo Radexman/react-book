@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes as Xmark } from "react-icons/fa";
 
 export default function BookDesciption({ book }) {
   return (
@@ -8,7 +8,7 @@ export default function BookDesciption({ book }) {
       <p className="text-2xl">{book.author}</p>
       <p className="xl">{`Pages: ${book.pages}`}</p>
       <button title="Delete Book" className="delete-btn group">
-        <FaTimes className="group-hover:text-slate-50" />
+        <Xmark className="group-hover:text-slate-50" />
       </button>
     </div>
   );
@@ -16,4 +16,12 @@ export default function BookDesciption({ book }) {
 
 BookDesciption.propTypes = {
   book: PropTypes.object.isRequired,
+};
+
+BookDesciption.defaultProp = {
+  book: {
+    title: "Book Title",
+    author: "Book Author",
+    pages: "Page number",
+  },
 };
